@@ -1,68 +1,94 @@
 body{
+    font-size: 20px;
+}
+
+
+
+div:hover{
+    border: 5px solid grey;
+    text-align: center;
+}
+div:nth-of-type(1){ /*pegando a primeira div*/
+    background-color: red;
+}
+div:nth-of-type(2){
+    background-color: blue;
+}
+div:nth-of-type(3){
+    background-color: green;
+}
+div:nth-of-type(4){
+    background-color: purple;
+}
+div:nth-of-type(5){
     background-color: grey;
 }
 
-
-.caixa {
-    color: white;
-    display: inline-block;
-    line-height: 50px;
-    text-align: center;
-    vertical-align: top;
-  }
-  
-.width-and-height {
-    height: 50px;
-    width: 50px;
-}
-
-/* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
-.padding {
-    padding: 20px;
-}
-
-/* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
-.margin {
-    margin: 30px;
-} 
-  /* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
-.border {
-    border: 5px solid black;
-}
-
-.super-mario {
-    width: 200px;
-    position: absolute;
-    left: 50px;
-    top: 300px;
-}
-
-.goomba {
-    width: 100px;
-    position: absolute;
-    left: 100px;
-    top: 650px;
-}
-
-.baloon {
-    position: absolute;
-    top: 450px;
-    left: 600px;
-}
-
-.speach {
-    font-size: 25px;
-    position: absolute;
-    top: 490px;
-    left: 620px;
-    z-index: 2;
+div:nth-of-type(1) > h3 { /* Aqui estamos pegando a primeira div e o primeiro h3 */
     color: black;
 }
 
-.bowser {
-    width: 200px;
-    position: absolute;
-    top: 550px;
-    left: 900px;
+div:nth-of-type(3){ /*Pegando a terceira div*/
+    height: 100px; 
+}
 
+div >  h3{
+    text-align: center;
+    font-size: 2em;
+}
+div:nth-last-of-type(odd) > h3{ /*Pegando as div q sao impares*/
+    font-style: italic;
+}
+
+ol > li{
+    background-color: yellow;
+    color: black;
+}
+
+ol > li:nth-last-of-type(even){
+    color: green;
+}
+
+ol > li:nth-last-of-type(odd){
+    text-transform: uppercase;
+}
+
+h1 > em, h2 > em, h3 > em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+
+li{
+    font-size: 20px;
+}
+li > em{
+    font-weight: bold;
+}
+
+.linguagens li:not(:nth-child(n+4)){ /*Faz com que pegue apenas os elementos que são menores do que 4*/
+    color: blue;
+}
+.pink-bg{
+    background-color: pink;
+}
+
+.aliados > li:hover{
+    font-weight: bold;
+}
+
+.aliados li a[href*="stackoverflow"] { /*Seleciona apenas o href desejado*/
+    color: orange;
+}
+.aliados li a[href*="w3schools"] {
+    color: green;
+}
+.aliados li a[href*="mozilla"] {
+    color: black;
+}
+.aliados li a[href*="devdocs"] {
+    color: yellow;
+}
+.aliados li a[href*="trybe"] {
+    color: green;
 }
