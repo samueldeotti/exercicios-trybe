@@ -29,3 +29,40 @@ body{
 .border {
     border: 5px solid black;
 }
+
+.super-mario {
+    width: 200px;
+    position: absolute;
+    left: 50px;
+    top: 300px;
+}
+
+.goomba {
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 650px;
+}
+
+.baloon {
+    position: absolute;
+    top: 450px;
+    left: 600px;
+}
+
+.speach {
+    font-size: 25px;
+    position: absolute;
+    top: 490px;
+    left: 620px;
+    z-index: 2;
+    color: black;
+}
+
+.bowser {
+    width: 200px;
+    position: absolute;
+    top: 550px;
+    left: 900px;
+
+}
