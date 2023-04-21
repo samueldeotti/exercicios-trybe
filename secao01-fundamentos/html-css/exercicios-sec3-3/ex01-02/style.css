@@ -1,0 +1,71 @@
+body{
+    background-color: grey;
+}
+
+
+.caixa {
+    color: white;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+.width-and-height {
+    height: 50px;
+    width: 50px;
+}
+
+/* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
+.padding {
+    padding: 20px;
+}
+
+/* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
+.margin {
+    margin: 30px;
+} 
+  /* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
+.border {
+    border: 5px solid black;
+}
+
+.super-mario {
+    width: 200px;
+    position: absolute;
+    left: 50px;
+    top: 300px;
+}
+
+.goomba {
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 650px;
+}
+
+.baloon {
+    position: absolute;
+    top: 450px;
+    left: 600px;
+}
+
+.speach {
+    font-size: 25px;
+    position: absolute;
+    top: 490px;
+    left: 620px;
+    z-index: 2; /*Diz em que camada vai ficar a imagem, quando mais alto, mais ele fica por cima*/
+    color: black;
+}
+
+.bowser {
+    width: 200px;
+    position: absolute; /*Deixa a imagem em cima de outros objetos*/
+    top: 550px; 
+    left: 900px;
+}
+
+ul{
+    list-style: none;  /*tira o enfeite da lista,a bolinha ou o número*/
+}

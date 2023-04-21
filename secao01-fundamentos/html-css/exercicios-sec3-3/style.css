@@ -1,0 +1,94 @@
+body{
+    font-size: 20px;
+}
+
+
+
+div:hover{
+    border: 5px solid grey;
+    text-align: center;
+}
+div:nth-of-type(1){ /*pegando a primeira div*/
+    background-color: red;
+}
+div:nth-of-type(2){
+    background-color: blue;
+}
+div:nth-of-type(3){
+    background-color: green;
+}
+div:nth-of-type(4){
+    background-color: purple;
+}
+div:nth-of-type(5){
+    background-color: grey;
+}
+
+div:nth-of-type(1) > h3 { /* Aqui estamos pegando a primeira div e o primeiro h3 */
+    color: black;
+}
+
+div:nth-of-type(3){ /*Pegando a terceira div*/
+    height: 100px; 
+}
+
+div >  h3{
+    text-align: center;
+    font-size: 2em;
+}
+div:nth-last-of-type(odd) > h3{ /*Pegando as div q sao impares*/
+    font-style: italic;
+}
+
+ol > li{
+    background-color: yellow;
+    color: black;
+}
+
+ol > li:nth-last-of-type(even){
+    color: green;
+}
+
+ol > li:nth-last-of-type(odd){
+    text-transform: uppercase;
+}
+
+h1 > em, h2 > em, h3 > em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+
+li{
+    font-size: 20px;
+}
+li > em{
+    font-weight: bold;
+}
+
+.linguagens li:not(:nth-child(n+4)){ /*Faz com que pegue apenas os elementos que são menores do que 4*/
+    color: blue;
+}
+.pink-bg{
+    background-color: pink;
+}
+
+.aliados > li:hover{
+    font-weight: bold;
+}
+
+.aliados li a[href*="stackoverflow"] { /*Seleciona apenas o href desejado*/
+    color: orange;
+}
+.aliados li a[href*="w3schools"] {
+    color: green;
+}
+.aliados li a[href*="mozilla"] {
+    color: black;
+}
+.aliados li a[href*="devdocs"] {
+    color: yellow;
+}
+.aliados li a[href*="trybe"] {
+    color: green;
+}
