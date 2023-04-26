@@ -8,7 +8,7 @@ adicionaCliente('Joao')
 
 console.log(clientesTrybeBank) */
 
- let clientesTrybeBank = ['Ada', 'John', 'Gus'];
+/*  let clientesTrybeBank = ['Ada', 'John', 'Gus'];
 
 function removeCliente(cliente) {
     for (let i = 0; i < clientesTrybeBank.length; i += 1) {
@@ -19,5 +19,5 @@ function removeCliente(cliente) {
 }
 console.log(clientesTrybeBank)
 removeCliente('John')
-console.log(clientesTrybeBank)
+console.log(clientesTrybeBank) */
 
